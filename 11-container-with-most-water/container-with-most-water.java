@@ -9,11 +9,11 @@ class Solution {
             int currheight=Math.min(height[left], height[right]);
             int currarea=currwidth*currheight;
             maxarea = Math.max(maxarea,currarea);
-            if(height[left]<height[right])
+            while(left<right && height[left]<=currheight)
             {
                 left++;
             }
-            else
+            while(left<right && height[right]<=currheight)
             {
                 right--;
             }

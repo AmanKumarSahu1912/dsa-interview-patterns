@@ -5,9 +5,7 @@ class Solution {
         int maxarea=0;
         while(left<right)
         {
-            int currwidth=right-left;
-            int currheight=Math.min(height[left], height[right]);
-            int currarea=currwidth*currheight;
+            int currarea=Math.min(height[left], height[right])*(right-left);
             maxarea = Math.max(maxarea,currarea);
             if(height[left]<height[right])
             {

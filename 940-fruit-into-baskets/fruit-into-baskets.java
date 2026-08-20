@@ -8,11 +8,10 @@ class Solution {
             basket.put(fruits[right],basket.getOrDefault(fruits[right],0)+1);
             while(basket.size()>2)
             {
-                int leftfruit=fruits[left];
-                basket.put(leftfruit,basket.get(leftfruit)-1);
-                if(basket.get(leftfruit)==0)
+                basket.put(fruits[left],basket.get(fruits[left])-1);
+                if(basket.get(fruits[left])==0)
                 {
-                    basket.remove(leftfruit);
+                    basket.remove(fruits[left]);
                 }
                 left++;
             }

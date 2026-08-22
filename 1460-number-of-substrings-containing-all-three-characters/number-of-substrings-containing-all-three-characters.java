@@ -9,10 +9,10 @@ class Solution {
             //min from all 3
             int minindex=Math.min(lastseen[0],Math.min(lastseen[1],lastseen[2]));
             //we can also skip if condition and directly set count+=minindex+1(ex -1+1=0)
-            if(minindex!=-1)
-            {
+           // if(minindex!=-1)
+           // {
                 count+=minindex+1;
-            }
+           // }
         }
         return count;
     }

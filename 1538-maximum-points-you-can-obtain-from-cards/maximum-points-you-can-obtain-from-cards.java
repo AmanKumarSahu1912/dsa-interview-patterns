@@ -11,12 +11,8 @@ class Solution {
             left++;
         }
         maxpoints=leftsum;
-        //for(left=k-1;left>=0;left--)
         while(k>0)
         {
-           /* leftsum-=cardPoints[left];
-            rightsum+=cardPoints[right];
-            right--;*/
             leftsum-=cardPoints[k-1];
             k--;
             rightsum+=cardPoints[right];

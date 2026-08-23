@@ -17,10 +17,8 @@ class Solution {
            /* leftsum-=cardPoints[left];
             rightsum+=cardPoints[right];
             right--;*/
-            leftsum-=cardPoints[k-1];
-            k--;
-            rightsum+=cardPoints[right];
-            right--;
+            leftsum-=cardPoints[--k];
+            rightsum+=cardPoints[right--];
             maxpoints=Math.max(maxpoints,leftsum+rightsum);
         }
         return maxpoints;
